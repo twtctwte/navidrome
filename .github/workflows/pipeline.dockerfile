@@ -11,6 +11,7 @@ RUN if [ "$TARGETPLATFORM" = "linux/386" ];  then cp navidrome_linux_386_linux_3
 RUN if [ "$TARGETPLATFORM" = "linux/arm64" ];  then cp navidrome_linux_arm64_linux_arm64/navidrome /navidrome; fi
 RUN if [ "$TARGETPLATFORM" = "linux/arm/v6" ]; then cp navidrome_linux_arm_linux_arm_6/navidrome /navidrome; fi
 RUN if [ "$TARGETPLATFORM" = "linux/arm/v7" ]; then cp navidrome_linux_arm_linux_arm_7/navidrome /navidrome; fi
+RUN if [ "$TARGETPLATFORM" = "freebsd/amd64" ];  then cp navidrome_freebsd_amd64_freebsd_amd64/navidrome /navidrome; fi
 RUN chmod +x /navidrome
 
 
